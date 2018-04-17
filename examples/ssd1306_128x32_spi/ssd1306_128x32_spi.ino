@@ -8,7 +8,7 @@ This example is for a 128x32 size display using SPI to communicate
 4 or 5 pins are required to interface
 
 Adafruit invests time and resources providing this open source code,
-please support Adafruit and open-source hardware by purchasing 
+please support Adafruit and open-source hardware by purchasing
 products from Adafruit!
 
 Written by Limor Fried/Ladyada  for Adafruit Industries.
@@ -22,17 +22,17 @@ All text above, and the splash screen must be included in any redistribution
 #include <Adafruit_SSD1306.h>
 
 // If using software SPI (the default case):
-#define OLED_MOSI  A5
-#define OLED_CLK   A3
+#define OLED_MOSI  D2
+#define OLED_CLK   D4
 #define OLED_DC    D3
-#define OLED_CS    A2
-#define OLED_RESET D5
+#define OLED_CS    D5
+#define OLED_RESET D0
 Adafruit_SSD1306 display(OLED_MOSI, OLED_CLK, OLED_DC, OLED_RESET, OLED_CS);
 
 /* Uncomment this block to use hardware SPI
 #define OLED_DC     D3
-#define OLED_CS     A2
-#define OLED_RESET  D5
+#define OLED_CS     D5
+#define OLED_RESET  D0
 Adafruit_SSD1306 display(OLED_DC, OLED_RESET, OLED_CS);
 */
 
