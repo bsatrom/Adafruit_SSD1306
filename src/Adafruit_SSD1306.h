@@ -18,6 +18,9 @@ All text above, and the splash screen must be included in any redistribution
 #ifndef _Adafruit_SSD1306_H_
 #define _Adafruit_SSD1306_H_
 
+// This will load the definition for common Particle variable types
+#include "Particle.h"
+
 #if ARDUINO >= 100
  #include "Arduino.h"
  #define WIRE_WRITE Wire.write
